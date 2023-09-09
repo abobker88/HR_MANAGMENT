@@ -35,13 +35,13 @@ class RoleSeeder extends Seeder
     ]);
     $user->assignRole('hr_manager');
 
-// create coordintor and assign role to it
-    $coordintor=\App\Models\User::create([
-        'name'=>'hr_coordintor',
-        'email'=>'hr_coordintor@gmail.com',
+// create coordinator and assign role to it
+    $coordinator=\App\Models\User::create([
+        'name'=>'hr_coordinator',
+        'email'=>'hr_coordinator@gmail.com',
         'password'=>12345678,
-        'username'=>'hr_coordintor',
+        'username'=>'hr_coordinator',
     ]);
-    $coordintor->assignRole('hr_coordinator');
+    coordinator->assignRole('hr_coordinator');
     }
 }
